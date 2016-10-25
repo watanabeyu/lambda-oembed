@@ -1,13 +1,9 @@
 /* Imports */
 var request = require('request');
 
-var oEmbed = null;
-var json = null;
-var html = null;
-var thumbnail = null;
-
 exports.handler = function(event,context,callback){
   var url = event.url;
+  var oEmbed = null;
 
   /* youtube */
   if(url.match(/youtube|youtu\.be/i)){
