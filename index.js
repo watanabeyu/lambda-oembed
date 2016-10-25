@@ -46,8 +46,8 @@ exports.handler = function(event,context,callback){
       context.succeed(JSON.parse(body));
     }
     else{
-      var error = new Error(body);
-      callback(error);
+      var exception = new Error(body);
+      callback(exception);
     }
   });
 }
